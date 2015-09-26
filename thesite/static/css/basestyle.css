@@ -1,0 +1,238 @@
+body {
+    color: #777;
+    font-size: 16px;
+}
+
+#the_page {
+    margin-top: -50px;
+}
+
+.img-display {
+    display: flex;
+    justify-content: ceter;
+    width: 70%;
+    border: 1px solid black;
+}
+
+.img-display .col-md-3 {
+    padding: 0;
+}
+
+.like-img {
+    position: relative;
+    float: left;
+    width:  200px;
+    height: 170px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.concept {
+    margin-top: 30px;
+}
+
+.concept h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.centerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px
+}
+
+.imagediv {
+    display: flex;
+    position: relative
+}
+
+.boxmodel {
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: 75px;
+}
+
+
+.content a:link {
+    text-decoration: none;
+}
+
+.content a:visited {
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content a:active {
+    text-decoration: underline;
+}
+
+.content a {
+    color: #1B1BD8;
+}
+
+.tile p {
+    width: 312px;
+    margin: auto;
+    text-align: left;
+    font-size: 12px;
+}
+
+.tile img:hover {
+    cursor: pointer;
+}
+
+.tile h4:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+
+.tile h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+/*CSS Notes*/
+
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    border: 1px solid red !important;
+}
+
+.notes-row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.col-1 {
+    width: 8.33%;
+    border: 1px solid red !important;
+}
+
+.col-2 {
+    width: 16.66%;
+    border: 1px solid red !important;
+}
+
+.col-3 {
+    width: 25%;
+    border: 1px solid red !important;
+}
+
+.col-4 {
+    width: 33.33%;
+    border: 1px solid red !important;
+}
+
+.col-5 {
+    width: 41.66%;
+    border: 1px solid red !important;
+}
+
+.col-6 {
+    width: 50%;
+    border: 1px solid red !important;
+}
+
+.col-7 {
+    width: 58.33%;
+    border: 1px solid red !important;
+}
+
+.col-8 {
+    width: 66.66%;
+    border: 1px solid red !important;
+}
+
+.col-9 {
+    width: 75%;
+    border: 1px solid red !important;
+}
+
+.col-10 {
+    width: 83.33%;
+    border: 1px solid red !important;
+}
+
+.col-11 {
+    width: 91.66%;
+    border: 1px solid red !important;
+}
+
+.col-12 {
+    width: 100%;
+    border: 1px solid red !important;
+}
+
+.scroll_text {
+    height: 300px;
+    width: 70%;
+    border-style: groove;
+    margin: auto;
+    padding: 5px;
+    overflow: auto;
+}
+
+
+
+.age_in_days_msg {
+    text-align: center;
+}
+
+.age_in_days_msg h3 {
+    font-size: 42px;
+}
+
+
+
+
+/*Guestbook CSS*/
+
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+}
+
+
+.gb_post {
+    background-color: #F1EEEE;
+    border-bottom: 3px solid #eee;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 18px;
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+.gb_post_date {
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.post_content {
+    margin-top: 0.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.error_messages {
+    color: red;
+    font-size: 12px;
+}

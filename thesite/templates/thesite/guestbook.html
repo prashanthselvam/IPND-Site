@@ -1,0 +1,55 @@
+{% extends "thesite/base.html" %}
+
+
+{% block content %}
+
+<div class="container-fluid" id="the_page">
+        <div class="row page-header">
+            <div class="col-md-12 text-center">
+                <h1>Guestbook</h1>
+                <h4>Please leave me a comment or two :)</h4>
+            </div>
+        </div>
+    <div class="content">
+        <br>
+        <div class="error_messages">
+        {{ form.non_field_errors }}
+            {% if form.author.errors %}
+                <p><strong>*Name required</strong></p>
+            {% endif %}
+            {% if form.text.errors %}
+                <p><strong>*Message required</strong></p>
+            {% endif %}
+        </div>
+        <form method="POST">{% csrf_token %}
+            <div style = "margin-bottom:20px">
+                <p style = "margin-bottom: 3px">Name:</p>
+                {{ form.author }}
+                <br>
+            </div>
+            <div style = "margin-bottom:5px">
+                <p style = "margin-bottom: 3px">Post comments here:</p>
+                {{ form.text }}
+            </div>
+            <div>
+                <input type="submit" value="Post Comment">
+            </div>
+        </form>
+        <hr>
+<!-- user comments start here -->
+        {% for post in posts %}
+        <div class="post">
+            <strong>{{post.author}}</strong> wrote: 
+            <div class="gb_post">
+                <div class="post_content">
+                    {{post.text}}
+                </div>
+                <div class="gb_post_date">
+                    Posted on {{post.date}}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+{% endblock %}

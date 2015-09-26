@@ -1,0 +1,56 @@
+{% extends "thesite/base.html" %}
+
+
+{% block content %}
+
+<div class="container-fluid" id="the_page">
+        <div class="row page-header">
+            <div class="col-md-12 text-center">
+                <h1>Age In Days Calculator</h1>
+                <h4>Find out your age in days!</h4>
+            </div>
+        </div>
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-9" style="margin:auto; float:none;">
+	        	<form method="POST">
+	        		{% csrf_token %}
+					<h2>When were you born?</h2>
+					<div class="row" style="margin-top:30px">
+						<div class="col-md-4">
+							<label> Day
+								<input type="text" name="day">
+							</label>
+						</div>
+						<div class="col-md-4">
+							<label> Month
+								<input type="text" name="month">
+							</label>
+						</div>
+						<div class="col-md-4">
+							<label> Year
+								<input type="text" name="year">
+							</label>
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<button>Submit!</button>
+						</div>
+					</div>
+				</form>
+				<div class="row" style="margin-top:30px">
+					<div class="age_in_days_msg">
+						<h3>{{msg}}</h3>
+						<div style = "color:red">
+							<h3>{{error}}</h3>
+						</div>
+						{% if r %}
+						<h2>You are <span style= 'color:blue; font-size: 52px'>{{r}}</span> days old!</h2>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}

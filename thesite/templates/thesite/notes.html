@@ -1,0 +1,618 @@
+{% extends "thesite/base.html" %}
+
+{% block content %}
+
+<div class="container-fluid" id="the_page">
+	<div class="row page-header">
+		<div class="col-md-12 text-center">
+			<h1>Course Notes</h1>
+			<h4>Here you will find all I have learned</h4>
+		</div>
+	</div>
+	<div class ="row" style="margin-top:20px">
+		<div class="tile col-md-4 text-center">
+			<h3>Stage 0</h3>
+			<div data-toggle="modal" data-target="#stage0">
+				<img src="http://lorempixel.com/312/170/animals/1">
+				<h4>Getting Started with HTML</h4>
+			</div>
+			<p>Welcome to the World Wide Web! Start your exploration here with an introduction to the World Wide Web and HTML. Find out about the basics of the internet how it's structured. Additonally, you will learn how to use HTML to design webpages</p>
+		</div>
+		<div class="tile col-md-4 text-center">
+			<h3>Stage 1</h3>
+			<div data-toggle="modal" data-target="#stage1">
+				<img src="http://lorempixel.com/312/170/animals/2">
+				<h4>Make Your Webpage</h4>
+			</div>
+			<p>Now that you know what a webpage is, let's learn a little more about them and how they are made and structured. Here we look at some of the basic principles of making webpages, and also learn about CSS.</p>
+		</div>
+		<div class="tile col-md-4 text-center">
+			<h3>Stage 2</h3>
+			<div data-toggle="modal" data-target="#stage2">
+				<img src="http://lorempixel.com/312/170/animals/3">
+				<h4>Introduction to Serious Programming</h4>
+			</div>
+			<p>Here we begin to explore "serious programming". We understand what is a programming language, basic characteristics of such languages, and some of the history behind these languages, which effectively create most of the internet content we see today</p>
+		</div>
+	</div>
+	<div class ="row" style="margin-top:20px">
+		<div class="tile col-md-4 text-center">
+			<h3>Stage 3</h3>
+			<div data-toggle="modal" data-target="#stage3">
+				<img src="http://lorempixel.com/312/170/animals/4">
+				<h4>Python Concepts</h4>
+			</div>
+			<p>After learning about programming languages broady, we set our focus on Python, which is one of the most used languages in the world. Learn all about Variables, Strings, If and While Statements, and even how to Debug your code. You will also learn about functions which are a fundamental component of all programming languages</p>
+		</div>
+		<div class="tile col-md-4 text-center">
+			<h3>Stage 4</h3>
+			<div data-toggle="modal" data-target="#stage4">
+				<img src="http://lorempixel.com/312/170/animals/5">
+				<h4>Diving Deeper in Python</h4>
+			</div>
+			<p>Things start to get a little trickier here as we delver deeper into Python. We're exploring concepts like structured data and list operators. Don't give up just yet as these are the tools which will help you solve the real big interesting problems!</p>
+		</div>
+		<div class="tile col-md-4 text-center">
+			<h3>Stage 5</h3>
+			<div data-toggle="modal" data-target="#stage5">
+				<img src="http://lorempixel.com/312/170/animals/6">
+				<h4>Let's Make a Real Webpage!</h4>
+			</div>
+			<p>Here we introduce a few more technical concepts. You are now building your own living breathing dynamic webpage which is hosted on the internet. Learn about how your web client communicates with servers and how you see content on your screen. Additionally, you will learn how to use templates to build more complex and dynamic websites.</p>
+		</div>
+	</div>
+	<div class ="row" style="margin-top:20px">
+		<div class="tile col-md-4 text-center">
+			<h3>Stage 6</h3>
+			<div data-toggle="modal" data-target="#stage6">
+				<img src="http://lorempixel.com/312/170/animals/7">
+				<h4>Let's Explore!</h4>
+			</div>
+			<p>After learning the basics of programming and how to build a web application, we aim to get a deeper understanding of Front End Design. In this stage we explore the intricacies of CSS and web frameworks. Bootstrap is one such framework, which was used to create this very webpage. After this lesson, continue exploring on your own. There is no dearth of lessons out there.</p>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="stage0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title" id="myModalLabel">Stage 0: Getting Started with HTML</h2>
+				<button type="button" class="close img-circle" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<article class="concept">
+					<h3 id="lesson1-1">The World Wide Web</h3>
+					<p>
+						The World Wide Web was invented in the early 90's. It is made up of webpages
+						which are created using Hyper Text Markup Language or <b>HTML</b>. It sounds
+						like a mouthful but is rather quite simple.
+					</p>
+					<p>
+						The web consists of three key components: Your web browser, the internet
+						and the servers where all the data is stored. The web browser sends messages
+						through the internet in HTTP. The server responds by sending the required files, images, webpages,
+						etc. back through the internet to the web browser. This is how you see what you see when using the
+						internet.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson1-2">HTML</h3>
+					<p>
+						HTML is made up of four key components:
+					</p>
+					<ul>
+						<li>Text Content: What you see</li>
+						<li>Markup: What the content looks like</li>
+						<li>References to other documents: Images, videos, etc.</li>
+						<li>Links to other pages</li>
+					</ul>
+				</article>
+				<article class="concept">
+					<h3 id="lesson1-3">Markup</h3>
+					<p>
+						Markup, or what the content looks like, is determined by various tags which we can use in HTML.
+						These tags aren't visible to the user but they control the layout and design of the contents on the
+						webpage. Below are a few examples of tags:
+					</p>
+					<ul>
+						<li>&lt;b&gt;Content&lt;/b&gt; will make the content appear <b>bold</b></li>
+						<li>&lt;em&gt;Content&lt;/em&gt; will <em>italicize</em> the content</li>
+					</ul>
+					<p>
+						There are also attribute tags which are formatted as follows:
+					</p>
+					<ul>
+						<li>&lt;Tag attr="value"&gt;contents&lt;/Tag&gt;</li>
+					</ul>
+					<p>
+						An example of such an attribute tag is <em>a href</em> which is used to create 
+						<a href = "https://en.wikipedia.org/wiki/Hyperlink">hyperlnks</a>
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson1-4">Whitespace</h3>
+					<p>
+						HTML does not recognize the whitespace that is included in the code. So we may enter as many spaces
+						as we'd like between words in the HTML editor but it will be displayed as one space in the HTML page.
+					</p>
+					<p>
+						To create whitespace, there are a couple tags we can use. The &lt;br&gt; tag is one such example which
+						is used to create breaks. This is the equivalent of pressing enter on a word document. Another tag
+						is the &lt;p&gt; tag which creates paragraphs. There is a key difference between these two tags:
+					</p>
+					<p>
+						The &lt;br&gt; tag is an example of an inline tag while &lt;p&gt; is a block tag.The difference between
+						the two will get clearer as we go but essentially an inline tag occurs within the line, while a block
+						tag creates a space around the content. Block tags generally need to have a closing tag while inline tags
+						don't always need to.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson1-5">HTML Documents</h3>
+					<p>
+						Throughout this course, we will be creating HTML documents. HTML documents follow a basic structure
+						which can be found at this <a href="http://www.scriptingmaster.com/html/basic-structure-html-document.asp">link</a>.
+					</p>
+				</article>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Stage 1 Modal -->
+
+<div class="modal fade" id="stage1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title" id="myModalLabel">Stage 1: Make Your Webpage</h2>
+				<button type="button" class="close img-circle" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<article class="concept">
+					<h3 id="lesson2-1">The Website As A House</h3>
+					<p>
+						A website consists of many components which come together in a coherent way. As such, the website can be compared to
+						a house. 
+					</p>
+					<ul>
+						<li><b>HTML:</b> The structure of the house; the walls/where everything is located</li>
+						<li><b>CSS:</b> The design, the furniture, the color scheme</li>
+						<li><b>Javascript:</b> The more interactive features like the garage door remote</li>
+					</ul>
+					<p>
+						All these elements come together in a tree-like structure through the DOM or Document Object Model.
+						DOM is the convention of presenting and interacting with elements in the web-tree.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson2-2">Boxes Everywhere!</h3>
+					<p>
+						Webpages can be seen as a group of boxes. If we take any webpage, we can break it down into a set
+						of differently shaped boxes, each containing a different element. This makes it easy for us to design
+						webpages. These boxes are created using &lt;div&gt; tags which will be explained in more depth soon.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson2-3">CSS</h3>
+					<p>
+						CSS or Cascading Style Sheets is the language which is used to add style to the webpage. It's described as "Cascading" because the style rules which are applied keep going down many levels - from child to parent - until the most specific rule gets applied.
+						<br><br>
+						This relates to the idea of inheritance which is the mechanism by which properties are applied not only to a specified element but also its descendants. Generally speaking, text-related properties are inherited (font, size, color, etc.) but box-related properties (box-width, height, etc.) are not.
+					</p>
+				</article>  
+				<article class="concept">
+					<h3 id="lesson2-4">The Box Model</h3>
+					<p>
+						As mentioned earlier, elements on webpages are organized in boxes. Everything on the net, is boxes. These boxes are composed of four key parts and we can play with each:
+					</p>
+					<div class="imagediv">
+						<ul>
+							<li><b>Content</b></li>
+							<li><b>Padding</b></li>
+							<li><b>Border</b></li>
+							<li><b>Margin</b></li>
+						</ul>
+						<div class="boxmodel">
+							<img src="/static/boxmodel.png" alt="boxmodel" height="175" width="175">
+						</div>
+					</div>
+					<p>
+						For more info on the box model, you can refer to this <a href="http://www.w3schools.com/css/css_boxmodel.asp">tutorial</a>.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson2-5">Ways of Working in Programming</h3>
+					<p>
+						In order to be a succesful programmer, a basic way of working needs to be followed. This can be described as Code, Test, Refine:
+					</p>
+					<ol>
+						<li>Get the basic structure of the page right</li>
+						<li>Translate the structure into tags within HTML</li>
+						<li>Start adjusting basic style - size of the boxes</li>
+						<li>Adjust positioning of the boxes</li>
+						<li>Once this general layout has been accomplished, dive into the details - colors, fonts, etc.</li>
+					</ol>
+				</article>
+				<article class="concept">
+					<h3 id="lesson2-6">Avoiding Repetition</h3>
+					<p>
+						Another key part of being a good programmer is avoiding repetition. This not only makes life a lot easier, but it keeps the program well-structured and light. Reptition slows down everything - the programmer, the page, and any person in the future who might have to work with your code. Avoiding repeition is a key tenet of programming. For example, using CSS for particular div or span classes is an example of avoiding repetition. By assigning a particular attribute to that class, we don't have to repeat it each time it appears in the code.
+					</p>
+				</article>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Stage 2 Modal -->
+
+<div class="modal fade" id="stage2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title" id="myModalLabel">Stage 2: Introduction to Serious Programming</h2>
+				<button type="button" class="close img-circle" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<article class="concept">
+					<h3 id="lesson3-1">Programming</h3>
+					<p>
+						Before we delve into programming, it is important to note a few definitions of key concepts. These are listed below:
+					</p>
+					<ul>
+						<li><b>Computer:</b> A universal machine which can execute precisely defined steps incredibly rapidly.</li>
+						<li><b>Program:</b> Something which tells the computer what to do. It is essentially a sequence of very precise steps</li>
+						<li><b>Programming Language:</b> The language in which the above mentioned steps are written. The programming language we will be learning is Python, which is also an interpreter.</li>
+					</ul>
+					<p>
+						Anything from a simple print command in Python, to the calendar app on a phone, to Python itself is an example of a program. It runs on sets of very precise instructions.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson3-2">Language Ambiguity</h3>
+					<p>
+						Some may ask why we use these complex languages for programming instead of the natural languages we already have. The reason is natural languages are inherently ambiguous and they are also too verbose. As mentioned earlier, the computer is <em>stupid</em> in that it can simply follow the instructions it is given (very rapidly). If these instructions are unclear, the computer cannot execute. Hence, natural language is not viable as a programming language.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson3-3">Programming Grammar</h3>
+					<p>
+						Like any language, programming languages have their syntax and grammar, and same goes for Python. One of the standard grammatical structures of programming statements is the Backus Naur Form. This <a href="https://www.youtube.com/watch?v=B4wMpOhOako">video</a> provides an excellent explanation.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson3-4">Grace Hopper</h3>
+					<p>
+						This section is included purely to highlight what a phenomenal human being <a href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</a> was. She invented the first compiler for a computer programming language, and contributed significantly to the development of one of the first high-level programming languages - COBOL.
+					</p>
+					<img class="centerimage" src="/static/gracehopper.jpg" alt="Picture of Amazing Grace" height="250">
+					<p>
+						When she first started working on the computer, others told her computers were good only for arithmetic. She absolutely proved them wrong. A complete badass and inspiration for us all. And here's a great clip of her on <a href="https://www.youtube.com/watch?v=1-vcErOPofQ">Letterman</a>.
+					</p>
+				</article>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Stage 3 Modal -->
+
+<div class="modal fade" id="stage3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title" id="myModalLabel">Stage 3: Python Concepts</h2>
+				<button type="button" class="close img-circle" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<article class="concept">
+					<h3 id="lesson4-1">Variables And Strings</h3>
+					<p>
+						A variable is an element in programming languages which can hold a certain value. As the name suggests, variables can vary. In other words, their value can change. Variables are one of the most fundamental building blocks of programming.
+					</p>
+					<p>
+						To assign a value to a variable, you follow the form "variable_name=value". Variables can contain numbers or strings.
+					</p>
+					<p>
+						There is a lot one can do with strings and variables. For example, we can index strings which is a way of identifying specific characters within the string. By using the in-built <em>find</em> function, we can extract the location of specific substrings from within a string.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson4-2">Functions</h3>
+					<p>
+						Like variables, functions are another fundamental building block of programming languages. Much of what programmers do is creating and using functions which can do anything from very simple tasks to incredibly complex. A function is defined using the following code:
+					</p>
+					<p style="margin-left:100px">
+						<strong>
+							def function_name(function input):<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return: output
+						</strong>
+					</p>
+					<p>
+						Functions are pretty much like the functions we have in mathematics. They take a certain input and transform it into a certain output. This has utility in an endless number of contexts.
+					</p>
+					<p>
+						The benefits of writing functions are numerous. For one, they allow us to break down a large program into smaller steps. This not only makes the code more coherent and well-organized, it also allows us to diagnose issues more easily by running each function in isolation. Functions also ensure that we don't repeat a lot of code, as the same function can be called to run the same code on different inputs. Another benefit is that local variables within the function are live only as long as the function is alive. So a variable x in function_1 will not interfere with a variable x in function_2. This avoid issues of variables being accidentally assigned values which were not intended for them. For more information on the benefits of function, please refer to the following <a href="http://www.cs.utah.edu/~germain/PPS/Topics/functions.html">link</a>
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson4-3">If &amp; While Statements</h3>
+					<p>
+						If and while statements are incredibly important in programming. Most programs, in fact, are a lot of if/while statements (and variations of if/while statements) which are placed within functions. An if statement is exactly what it sounds like: if a certain statement is true, perform this action. While is similar, but it creates a loop. So we are saying, <b>while</b> this statement is true, keep performing this action. 
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson4-4">Debugging</h3>
+					<p>
+						Debugging seems like the dryest part of programming but it may be one of the most important skills you need to be a good programmer. It is essentially finding and fixing the errors in your program. In the lesson, 5 key strategies for debugging were covered:
+					</p>
+					<ol>
+						<li>Examine error messages when programs crash</li>
+						<li>Work from example code</li>
+						<li>Make sure examples work</li>
+						<li>Check (print) immediate results</li>
+						<li>Keep &amp; compare old versions</li>
+					</ol>
+					<p>
+						Each of these is covered in more detail in this <a href="https://www.udacity.com/course/viewer#!/c-nd000/l-4146130474/m-4119808593">lesson</a>
+					</p>
+				</article>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Stage 4 Modal -->
+
+<div class="modal fade" id="stage4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title" id="myModalLabel">Stage 4: Diving Deeper in Python</h2>
+				<button type="button" class="close img-circle" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<article class="concept">
+					<h3 id="lesson5-1">Structured Data</h3>
+					<p>
+						One of the most powerful data structures in python is the list. It can be defined as a sequence of any type of elements. A list is created as follows:
+					</p>
+					<p style="margin-left:50px">
+						p = ['a','b','c']
+					</p>
+					<p>
+						Each element of the list can be a string, or a number, or even other lists. Lists are pretty great and there is a lot you can do with them because of their versatility.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson5-2">List Operators</h3>
+					<p>
+						Like we have for strings, we have various operators we can use to manipulate lists. The most basic would be list indexing. To refer to a specific element in a list, we use the list_name[element_number] format, much like we did with strings. To manipulate the list, here are a couple operators:
+					</p>
+					<p style="margin-left:50px">
+						<strong>Sum Operator:</strong> By adding two lists, ['a','b'] + ['c','d'] we simply concatenate them into ['a','b','c','d'].
+						<br><br>
+						<strong>Append Operator:</strong> list.append(element) will add to the list one more element. This element may be a string, a number, or even another list.
+					</p>
+					<p>
+						There is also the for statement which is effectively a while statement for lists. This is also incredibly useful in writing more efficient code.
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson5-3">How To Solve Problems</h3>
+					<p>
+						There is no one golden bullet to approaching every problem in the world. Each requires its own style. However, there are some general steps we can follow in programming which can make us a lot more adept at solving problems. These steps are really quite simple:
+					</p>
+					<ol style="margin-left:50px">
+						<li>Don't panic!</li>
+						<li>What are the inputs</li>
+						<li>What are the outputs</li>
+						<li>How do I get from step 2 to 3</li>
+					</ol>
+					<p>
+						Granted, that last step is a lot harder than the other three. However, the broader message here is to tackle the problem systematically. Once we are on step 3, we can break the problem into smaller parts and try to resolve each. Being able to think in abstract terms also helps because you are able to see the structures upon which the problem's solution would be based. 
+					</p>
+				</article>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Stage 5 Modal -->
+
+<div class="modal fade" id="stage5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title" id="myModalLabel">Stage 5: Let's Make a Real Webpage</h2>
+				<button type="button" class="close img-circle" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<article class="concept">
+					<h3 id="lesson6-1">Intro to Networks</h3>
+					<p>
+						Networks can be found everywhere. They are essentially systems of various elements which can coherently communicate with each other. The internet is one massive network which consists of many subnetworks. Communication within the internet happens via servers. When you go to a certain URL, your client (the web browser) sends a request to a server which holds all the data which makes up the website you're trying to visit. Similarly, when you post something on the website, your web client sends a request to the server to post the data on to the site. Essentially, while get is used for fetching documents from the server, post is used for updating data on the server. Also, GET parameters live in the URL. Because of this, GET commands have limited lengths. POST commands, on the other hand, because the parameters are in the body of the document, can be almost limitless in length. 
+					</p>
+					<p>
+						Also important to discuss is HTTP. HyperText Transfer Protocol is the main protocol of the web. It is what your browser uses to talk to servers. When you type a URL into your browser, your browser is actually sending a get request to the server. So say you are trying to visit the URL: http://www.example.com/foo the request line will be GET /foo HTTP1.1. There are three main parts in that line (The method, the path, and the version). The method is the method in which you are interacting with the server (GET and POST are the two big ones). The path is the actual document you are requesting from the server. The last bit is the version which is the version of HTTP that you are speaking. If you're wondering where the www.example.com is in this request line, it's not there because you already connected to it when the page loaded. www.example.com would be the root directory or the first "/" that you see before foo.
+					</p>
+					<p>
+						When a request like the one above is made, the server responds with a response statement. This respons can look like: HTTP/1.1 200 OK. The 200 in there is a status code. There are a few different status codes and their meanings are as follows:
+					</p>
+					<ul>
+						<li>200 OK - The document is found</li>
+						<li>302 Found - The document is located somewhere else</li>
+						<li>404 Not Found - The document was not found at all (You've probably seen this one)</li>
+						<li>500 Server Error - The server broke trying to process your request</li>
+					</ul>
+					<p>
+						These status codes allow us to debug our code and see what's going on between the server and the browser. The status line has some more elements which you can learn about in this <a href="https://www.youtube.com/watch?v=01kw2lzzJn4">video</a>
+					</p>
+					<p>
+						Finally, let us look at the two broad types of responses the server can send - Static vs Dynamic. The names are pretty self explanatory but let us look into them deeper.
+						Static is pre-written content that the server simply returns. Images, or most old webpages are pretty much static. Dynamic requests receive content that's made on the fly by web applications. Most content we see on the web today is dynamic, i.e. it has been created by web applications which live on servers. And these web applications are what we are learning to create :)
+					</p>
+				</article>
+				<article class="concept">
+					<h3 id="lesson6-2">Validation</h3>
+					<p>
+						When creating websites, we often need to include forms which are used to take in user input. This is a hugely useful tool and is a big part of what makes websites dynamic and exciting. However, this also adds the risk of users being able to enter malicious or even well-intentioned invalid content to the site, which may mess up the code. This is why we need validation.
+					</p>
+					<p>
+						Validation is basically ensuring that whatever the user has inputted into our website is fit for the website to handle. This can be done in many different ways, but they all involve, in one way or another, using code to understand what the user has entered and seeing if it lines up with the type of value we were expecting. So, for example, if a user enters letters in a field where we need the user to input digits, then we can validate that with code such as isdigit(). 
+					</p>
+					<p>
+						Related to the concept of validation is escaping. When users enter html tags into forms, it has the capability of seriously messing up the page. This is because the user's HTML tags enter our website as a string and mess up the existing code. Making the system understand when the user is entering these tags and "escaping" them is crucial.
+					</p>
+					<p>
+						Validation also significantly improves the user experience on a website. With validation, we can do things like display error messages when a user inputs incorrect or invalid information in a form. On this website, for example, in the guestbook we have used validation to recognize if the user has entered information in both entry fields (name and content). If the server recognizes that either field is empty, it throws out an error message which is stored in the error variable. This allows the user to see why the website is not behaving the way they were expecting it to, and correct their mistakes. To learn more about posting responses after validating a user input, please refer to the video below:
+						<br>
+						<iframe width="420" height="315" class="centerimage" src="https://www.youtube.com/embed/3EgN3NxgH-Y"></iframe>
+					</article>
+					<article class="concept">
+						<h3 id="lesson6-3">The importance of avoiding repetition</h3>
+						<p>
+							Avoiding repetition is a key tenet in writing good code. We have been avoiding repetition throughout this course - Using functions and variables, for example, are techniques which in a way avoid repetition. The reasons for avoiding repetition are fairly obvious - it saves you lots of time, it makes your code a lot neater, it makes your applications less bulky, and it is easier to correct errors and fix things in multiple locations all at once. If you do not actively avoid repetition, you are setting yourself up for a lot of pain down the line.
+						</p>
+						<p>
+							One way of avoiding repetition is by using templates. We used a template library named Jinja2 which is basically a library to build complex strings in HTML. This website makes extensive use of Jinja2. With Jinja2, we are able to have a base template which contains the overall layout of the webpage, and then have other pages place themselves within that layout. For more info on templates, check out the video below:
+							<br>
+							<iframe width="420" height="315" class="centerimage" src="https://www.youtube.com/embed/nT0wOJ3pQMw"></iframe>
+						</p>
+					</article>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Stage 6 Modal -->
+
+	<div class="modal fade" id="stage6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="myModalLabel">Stage 6: Let's Explore! (Front-End Design)</h2>
+					<button type="button" class="close img-circle" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<article class="concept">
+						<h3 id="lesson7-1">The Importance of CSS</h3>
+						<p>
+							Something that we have already explored earlier in the course is CSS and how it is used to stylize our websites. For my exploration component of the nanodegree, I chose to dig deeper into this. Through front-end design, we get to design how the user will interface with our website. The front-end is probably where you can see results most directly as it is incredibly visual. It is through front-end designs that we are shaping the user's impression of the site and how easy to use or not they find it. These are hugely important factors in drawing in users. For these reasons, Front-End Design is hugely important, and is why I chose to dig deeper into CSS.
+						</p>
+					</article>
+					<article class="concept">
+						<h3 id="lesson7-2">CSS Frameworks and Responsive Layouts</h3>
+						<p>
+							A big part of making good design is having strong frameworks. Design frameworks are the basic structures within which the contents of the page are organized. If you look at almost any webpage, you'll notice you can organize its contents very easily into some sort of grid structure. This is the design framework of the website. It is not just important to have a strong framework, but also that it be responsive to different scenarios. A framework which adjusts to the medium on which it is being viewed is crucial to ensuring that users have a consistent experience on any platform. 
+						</p>
+						<p>
+							We have already discussed some of the elements of frameworks building in the first few lessons (boxes, flex, etc.) Let's dive a little further into some of these concepts. 
+						</p>
+						<p>
+							A good way to organize our grid is by using rows and columns. By using 12 different column sizes, we can divide the space on our site beautifully. See below:
+						</p>
+						<div class="grid">
+							<div class="notes-row">
+								<div class="col-2">2 Columns</div>
+								<div class="col-10">10 Columns</div>
+							</div>
+							<div class="notes-row">
+								<div class="col-3">3 Columns</div>
+								<div class="col-9">9 Columns</div>
+							</div>
+							<div class="notes-row">
+								<div class="col-4">4 Columns</div>
+								<div class="col-4">4 Columns</div>
+								<div class="col-4">4 Columns</div>
+							</div>
+							<div class="notes-row">
+								<div class="col-3">3 Columns</div>
+								<div class="col-6">6 Columns</div>
+								<div class="col-3">3 Columns</div>
+							</div>
+						</div>
+						<p>
+							Within each of the rows above, there are combinations of columns. The columns add up to 100% of the container width. The reason they all sit nicely next to each other because we use the CSS property "Display:Flex" in the parent div. Something else you will notice is that if you shrunk the webpage, the container also contracts, and at a certain point, the menu on the left disappears. This is an example of responsive design.
+						</p>
+						<p>
+							Another cool thing we can do is add textboxes like the one below. This is done using the "overflow: auto" property.
+						</p>
+						<div class="scroll_text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris est odio, tempor quis nibh sed, faucibus blandit libero. Maecenas odio ante, euismod vitae diam pulvinar, consequat gravida ex. Fusce posuere finibus congue. In non lectus venenatis, laoreet enim nec, accumsan purus. Quisque sit amet egestas leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus euismod interdum risus, a fermentum lacus elementum gravida. Proin sit amet sollicitudin sem, et gravida justo. Praesent ut suscipit erat. Morbi gravida ac ipsum ac vehicula. Vivamus imperdiet nibh sed ultrices pulvinar. Proin eu pretium mauris. Sed a finibus lorem. Aliquam erat volutpat.
+							</p>
+							<p>
+								Etiam a ultrices enim, quis porttitor lorem. Nullam tincidunt eros sit amet velit auctor pretium. Donec sapien felis, sollicitudin sed dolor dignissim, commodo porttitor enim. Suspendisse eget metus vitae diam maximus dignissim quis a sapien. Curabitur a laoreet nisi. Nam eu viverra orci. Phasellus quis turpis tincidunt, sodales nisi eget, vehicula ex.
+							</p>
+							<p>
+								Morbi sed varius est, vitae feugiat augue. Maecenas lacinia, sapien eu ultrices pharetra, lacus nunc ultrices tortor, sit amet rutrum ipsum odio at massa. Aliquam eleifend nisl mi, eu porta dolor porta non. Mauris vitae euismod erat. Nam bibendum nisi ut consectetur auctor. Aenean at lacinia magna. Quisque id sapien ac quam ullamcorper porttitor vitae et ante. Morbi dignissim eu purus laoreet auctor.
+							</p>
+						</div>
+					</article>
+					<article class = "concept">
+						<h3 id="lesson7-3">Intro to Bootstrap</h3>
+						<p>
+							One of the most popular and impressive frameworks out there is Bootstrap. It was created by Twitter and provides a whole load of features which can be used on any website. Bootstrap is the framework which was used to build the movie trailer website earlier in the course.
+						</p>
+						<p>
+							A lot can be said about boostrap but its best to learn by doing. The bootstrap documentation is incredibly thorough and it's a great place to see all the cool features Bootstrap offers. It can also be customized so that you are only taking the features which you need. This reduces the size of the bootstrap CSS file significantly.
+						</p>
+						<p>
+							That's about all for bootstrap. Below are some excellent resources which were provided through this short Front-End course. I hope you have enjoyed reading these notes and learned something from them as well!
+						</p>
+					</article>
+					<article class = "concept">
+						<h3 id="lesson7-4">Fantastic Resources</h3>
+						<p>
+							Below are two excellent resources which I found during my exploration:
+						</p>
+						<ol style="margin-left:50px">
+							<li><a href="http://www.smashingmagazine.com/2008/01/10-principles-of-effective-web-design/">10 Principles of Effective Web Design:</a>This list provides a great concise guide about some basic design principles. My biggest takeway from this was that to be a good front end designer, you should always create with the end-user in mind. We often think that a good website is an aesthetically pleasing website, but more important is the concept of usability. If the user cannot use your website in a plesant, easy, intuitive way, then your website needs to be improved. The list also provides some excellent tips on how to grab the user's attention and focus it on certain elements of the website. By effectively using stuff like white space, simple fonts, and strong organization, we can drastically improve how users will respond to our websites.I think Rule 8 "Communicate Effectively with a "Visible Language"" is the most important one. It breaks down into 3 simple concepts how to communicate effectively through a website</li>
+							<li><a href="http://alistapart.com/article/css-positioning-101">CSS Positioning 101:</a>This resource is a lot more specific but excellently written and incredibly useful. Throughout this course, I have struggled a little with figuring out how the "Position" attribute works. I always sort it out with trial and error but this guide was hugely useful in understanding what each of the styles mean. The way the absolute position can be used to stretch out items across a page was fantastic and I'm looking forward to using that in my own pages. Understanding these attributes will make positiong and layout a lot more intuitive, which is key to deisining a good website.</li>
+						</ol>
+						<p>
+							Here are some more resources which were introduced in the Udacity course on Front End Design:
+						</p>
+						<ol style="margin-left:50px">
+							<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Guide To Flexbox</a></li>
+							<li><a href="https://www.youtube.com/watch?v=VNr1zneQerw">A Tutorial on CSS Resetting</a></li>
+							<li><a href="http://placehold.it">Add placeholder images to website</a></li>
+							<li><a href="https://www.udacity.com/course/viewer#!/c-ud304/l-2794148535/m-2730818588">Intro to Bootstrap and Other Frameworks</a></li>
+						</ol>
+					</article>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	{% endblock %}
